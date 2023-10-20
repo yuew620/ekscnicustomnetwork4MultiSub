@@ -60,7 +60,7 @@ done
 if [ $vareniconfig != "NONE" ]
 then
 /etc/eks/bootstrap.sh eksworkshop-eksctl --kubelet-extra-args "--node-labels=k8s.amazonaws.com/eniConfig=$vareniconfig,eks.amazonaws.com/nodegroup=$varnodegroup" --b64-cluster-ca $B64_CLUSTER_CA --apiserver-endpoint $API_SERVER_URL --dns-cluster-ip $K8S_CLUSTER_DNS_IP
-echo "end bootstrap"  >> /tmp/tmp20231020.txt
+#echo "end bootstrap"  >> /tmp/tmp20231020.txt
 fi
 
 #echo "test var" >> /tmp/tmp20231020.txt
